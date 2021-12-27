@@ -1,23 +1,27 @@
-import logo from './logo.svg';
+import "./assets/css/style.css"
+import "./assets/css/respo.css"
 import './App.css';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Spotlight from './components/screens/Spotlight';
+import AboutUs from "./components/screens/AboutUs";
+import NewsLetter from "./components/screens/NewsLetter";
+import OurProjects from "./components/screens/OurProjects";
+import Gallery from "./components/screens/Gallery";
+import Contact from "./components/screens/Contact";
+import Foote from "./components/screens/Foote";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       <Spotlight />
+       <AboutUs />
+       <NewsLetter />
+       <OurProjects />
+       <Gallery />
+       <Contact />
+       <Foote />
     </div>
   );
 }

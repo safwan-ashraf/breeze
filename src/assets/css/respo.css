@@ -1,0 +1,152 @@
+#menu-icon{
+	width: 25px;
+	right:3%;
+	display: none;
+	position: fixed;
+	z-index: 3;
+}
+#menu-icon img{
+	display: block;
+	width: 100%;
+	filter: invert(.3);
+}
+#close-icon{	
+	width: 32px;
+    height: 32px;
+	position: fixed;
+	filter: invert(0.3);
+	right:2%;
+	top: 3%;
+	cursor: pointer;
+	z-index: 4;
+}
+#close-icon img{
+	width: 100%;
+	display: block;	
+}
+
+#close-icon.active {
+    display: block;
+
+}
+#mobile-menu{
+	z-index: 3;
+	position: fixed;
+	width: 250px;
+	background:#d3cac3;
+	height: 100vh;
+	right: 0;
+	top: 0;
+	padding-top: 60px;
+}
+#mobile-menu ul{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+#mobile-menu ul li{
+	margin: 0px auto 40px auto;
+	border-bottom: 1px solid #000;
+}
+#mobile-menu ul li:last-child{
+	margin-bottom: 0;
+}
+#mobile-menu ul li a{
+	font-size: 19px;
+    font-weight: 500;
+    color: #464949;
+    display: block;
+}
+#mobile-menu.active {
+	display: block;
+}
+span.overlay{
+	background: rgba(0, 0, 0, 0.6);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+@media all and (max-width: 840px){
+    #spotlight h3.carousel{
+        font-size: 32px;
+    }
+    #spotlight header div.right{
+        display: none;
+    }
+    #menu-icon{
+        display: block;
+    }
+}
+@media all and (max-width:768px) {
+    #about div.top div.left {
+        width: 100%;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    #about div.top div.right {
+        width: 100%;
+        text-align: center;
+    }
+    #about div.top ul li {
+        justify-content: center;
+    }
+    #about div.top div.button-box {
+        margin: 0 auto;
+    }
+    #spotlight div.carousel-caption{
+        display: none;
+    }
+}
+@media all and (max-width:640px) {
+    #about div.bottom ul li {
+        width:100%;
+        margin-bottom: 20px;
+    }
+    #newsltr div.contents div.form {
+        flex-wrap: wrap;
+        width: 90%;
+    }
+    #newsltr div.contents div.form input {
+        width: 90%;
+    }
+    #newsltr div.contents div.form a.button {
+        width: 30%;
+        margin-top: 20px;
+    }
+    #projects {
+        padding: 30px 0 0;
+    }
+    #projects div.containr div.left ul {
+        display: none;
+        
+    }
+    #projects div.containr div.right ul {
+        padding-left: 0;
+    }
+    #projects div.containr div.left {
+        width: 100%;
+        text-align: center;
+    }
+    #projects h6 {
+        text-align: center;
+    }
+    #projects div.containr div.right {
+        width: 100%;
+    }
+    #contact {
+        padding :50px 0;
+    }
+    #contact h5 {
+        text-align: center;
+    }
+    #contact div.content div.left {
+        width:100%;
+        margin-bottom: 20px;
+    }
+    #contact div.content div.right {
+        width:100%;
+    }
+}
